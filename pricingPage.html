@@ -21,6 +21,11 @@
             </nav>
             <button class="button-bgcolor"><a href="#" class="button-fontcolor">Start Scheduling</a></button>
         </div>
+        <div class="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <main>
         <article>
@@ -30,73 +35,85 @@
             <div class="bill-toggle">
                 <span class="weightToggle bill-period">Billed Monthly</span>
                 <div class="toggleButton">
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" class="checkYear" id="check">
                     <label for="check" class="checkButton"></label>
                 </div>
                 <span class="bill-period">Billed Yearly</span>
             </div>
         </article>
         <div class="plan-values">
-            <section class="plan-box">
-                <b>&dollar;4 <span>/mo</span></b>
-                <p>Perfect plan if you're just starting out.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Real-time Analytics</li>
-                </ul>
-                <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
-            </section>
-            <section class="plan-box">
-                <b>&dollar;12 <span>/mo</span></b>
-                <p>Perfect plan if you're a heavy user of social media</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Instagram Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Real-time Analytics</li>
-                </ul>
-                <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
-            </section>
-            <section class="plan-box">
-                <b>&dollar;7 <span>/mo</span></b>
-                <p>Perfect plan if you're just starting out.</p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
-                    <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
-                </ul>
-                <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
-            </section>
+            <div class="plan-container">
+                <section class="plan-box">
+                    <b>&dollar;<span class="plan-box-value month">4</span> <span>/mo</span></b>
+                    <p>Perfect plan if you're just starting out.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Real-time Analytics</li>
+                    </ul>
+                    <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
+                </section>
+                <section class="plan-box">
+                    <b>&dollar;<span class="plan-box-value month">12</span> <span>/mo</span></b>
+                    <p>Perfect plan if you're a heavy user of social media</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Instagram Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Real-time Analytics</li>
+                    </ul>
+                    <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
+                </section>
+                <section class="plan-box">
+                    <b>&dollar;<span class="plan-box-value month">7</span> <span>/mo</span></b>
+                    <p>Perfect plan if you're just starting out.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i>Linkedin Integration</li>
+                        <li><i class="fa-solid fa-check"></i>Twitter Integration</li>
+                    </ul>
+                    <button class="button-bgcolor"><a href="#" class="button-fontcolor">Subscribe Now</a></button>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="footerLogo">
             <img src="/assets/Logo.svg">
         </div>
-        <div>
-            <nav class="footer-nav">
-                <h3>Products</h3>
-                <a href="#">Homepage</a>
-                <a href="#">Pricing</a>
-                <a href="#">Features</a>
-            </nav>
-            <nav class="footer-nav">
-                <h3>Help</h3>
-                <a href="">Live Chat</a>
-                <a href="#">Send Email</a>
-                <a href="#">FAQ</a>
-            </nav>
-            <nav class="footer-nav">
-                <h3>Company</h3>
-                <a href="#">About</a>
-                <a href="#">Customers</a>
-                <a href="#">Blog</a>
-            </nav>
+        <div class="footer-container">
+            <div class="footer-navegacao">
+                <nav class="footer-nav">
+                    <h3>Products</h3>
+                    <div>
+                        <a href="#">Homepage</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Features</a>
+                    </div>
+                </nav>
+                <nav class="footer-nav">
+                    <h3>Help</h3>
+                    <div>
+                        <a href="">Live Chat</a>
+                        <a href="#">Send Email</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </nav>
+                <nav class="footer-nav">
+                    <h3>Company</h3>
+                    <div>
+                        <a href="#">About</a>
+                        <a href="#">Customers</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </nav>
+            </div>
             <form class="footer-form">
-                <label>Try TweetNow</label>
-                <div>
-                    <input type="email">
-                    <input type="submit" value="Start Scheduling" class="button-bgcolor button-fontcolor">
+                <div class="form">
+                    <label>Try TweetNow</label>
+                    <div class="form-container">
+                        <input type="email" id="email">
+                        <input type="submit" value="Start Scheduling" class="button-bgcolor button-fontcolor submit">
+                    </div>
                 </div>
             </form>
         </div>
